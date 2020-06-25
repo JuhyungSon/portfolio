@@ -154,6 +154,10 @@
         .section {
             padding: 50px;
             text-align: center;
+            margin: auto;
+        }
+        
+        .section__container {
             max-width: 1200px;
             margin: auto;
         }
@@ -193,4 +197,38 @@
         
         .major__description {
             font-size: var(--font-small);
+        }
+        
+        #Softwaredevelopment {
+            background-color: beige;
+        }
+        
+        .skill__description {
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .skillset {
+            display: flex;
+            background-color: rgb(89, 168, 247);
+            margin: 20px 0;
+            color: #000000;
+        }
+        
+        .skillset__title {
+            color: black;
+        }
+        
+        .skillset__left {
+            flex-basis: 60%;
+            background: dodgerblue;
+            padding: 20px 40px;
+        }
+        
+        .skillset__right {
+            flex-basis: 40%;
+        }
+        
+        .tools {
+            background-color: #6bd0ddf5;
         }
