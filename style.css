@@ -286,7 +286,7 @@
             width: 280px;
             height: 250px;
             margin: 2px;
-            background-color: lightyellow;
+            background-color: lightsteelblue;
         }
         
         .project__img {
@@ -328,4 +328,39 @@
             left: 50%;
             margin-left: -12px;
             margin-top: 8px;
+        }
+        /*testimonials*/
+        
+        #Mentoring {
+            background-color: var(--color-light-white);
+        }
+        
+        .mentoring {
+            margin: 40px;
+        }
+        
+        .mentoring {
+            display: flex;
+            margin: 32px 0;
+        }
+        
+        .mentoring__avatar {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin: 12px;
+        }
+        
+        .mentoring__speech-bubble {
+            padding: 18px;
+            background-color: var(--color-white);
+            border-radius: var(--size-border-radius);
+        }
+        
+        .mentoring__avatar:nth-child(odd) {
+            margin-right: 40px;
+        }
+        
+        .mentoring__avatar:nth-child(even) {
+            margin-left: 40px;
         }
