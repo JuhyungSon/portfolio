@@ -364,3 +364,17 @@
         .mentoring__avatar:nth-child(even) {
             margin-left: 40px;
         }
+        
+        #contact {
+            background-color: darkgrey;
+        }
+        
+        .contact__title,
+        .contact__email,
+        .contact__rights {
+            color: black
+        }
+        
+        .contact__title {
+            margin: 32px 0;
+        }
