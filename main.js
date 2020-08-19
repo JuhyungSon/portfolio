@@ -25,6 +25,13 @@ navbarMenu.addEventListener('click', (event) => {
     scrollIntoView(link);
 });
 
+//toggle
+
+const navbarToggleBtn = document.querySelector('.navbar__toggle-btn');
+navbarToggleBtn.addEventListener('click', () => {
+    navbarMenu.classList.toggle('open');
+});
+
 //handle click on  "contact me" button on home
 const homeContactBtn = document.querySelector('.home__contact');
 homeContactBtn.addEventListener('click', () => {
@@ -51,6 +58,26 @@ document.addEventListener('scroll', () => {
 //handle click on the "arrow up " button
 arrowUp.addEventListener('click', () => {
     scrollIntoView('#Home');
+});
+
+//projects
+const workBtnContainer = document.querySelector('work__categories');
+const projectContainer = document.querySelector('.work__projects');
+const projects = document.querySelectorAll('.project');
+workBtnContainer.addEventListener('click', (e) => {
+    const filter = e.target.dataset.filter || e.target.parentNode.dataset.filter;
+    if (filter == null) {
+        return;
+    }
+    console.log(filter);
+    projects.forEach((project) => {
+        console.log(project.dataset.type);
+        if (filter === '*' || filter === project.dataset.type) {
+            project.classList.remove('invisible');
+        } else {
+            project.classList.add('invisible');
+        }
+    });
 });
 
 function scrollIntoView(selector) {
